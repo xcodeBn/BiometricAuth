@@ -23,8 +23,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.FragmentActivity
 import com.pisces.b_auth2.ui.theme.B_Auth2Theme
-import com.pisces.piauth.BioMetricAuth
-import com.pisces.piauth.BioMetricAuthStatus
+
 
 
 class MainActivity : FragmentActivity() {

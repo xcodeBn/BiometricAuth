@@ -70,6 +70,6 @@ dependencies {
     debugImplementation(libs.ui.test.manifest)
     implementation(libs.androidx.biometric)
     implementation(libs.androidx.biometric.v120alpha05)
-    implementation(project(":piauth"))
+    implementation("com.github.xcodeBn:B_Auth2:piAuth")
 
 }

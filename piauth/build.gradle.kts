@@ -44,7 +44,7 @@ dependencies {
 
 publishing {
     publications {
-        register<MavenPublication>("release") {
+        register<MavenPublication>("maven") {
             groupId = "com.pisces"
             artifactId = "piauth"
             version = "1.0"
