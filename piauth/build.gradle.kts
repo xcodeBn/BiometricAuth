@@ -13,6 +13,7 @@ android {
     defaultConfig {
         minSdk = 24
         targetSdk = 34
+
     }
 
     buildTypes {
@@ -33,8 +34,6 @@ android {
 dependencies {
 
     implementation(libs.core.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.material)
     implementation(libs.androidx.biometric)
     implementation(libs.androidx.biometric.v120alpha05)
 }
@@ -42,9 +41,9 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("maven") {
-            groupId = "com.pisces"
+            groupId = "com.pisces.piauth"
             artifactId = "piauth"
-            version = "1.0"
+            version = "2.0"
 
             afterEvaluate {
                 from(components["release"])
