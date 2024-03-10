@@ -12,5 +12,5 @@ BioMetricAuth is an Android library designed to simplify the implementation of b
 
 ## Installation
 
-###facing some issues with jitpack at thhe moment, will update and fix later.
-###there's only 2 classes that you can copy and paste to easily implement the code in your project
+### facing some issues with jitpack at thhe moment, will update and fix later.
+### there's only 2 classes that you can copy and paste to easily implement the code in your project
