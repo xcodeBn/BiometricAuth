@@ -12,30 +12,5 @@ BioMetricAuth is an Android library designed to simplify the implementation of b
 
 ## Installation
 
-To use BioMetricAuth in your Android project, follow these steps:
-
-1. Add the JitPack repository to your project's build.gradle file:
-
-```groovy
-allprojects {
-    repositories {
-        ...
-        maven { url 'https://jitpack.io' }
-    }
-}
-2. Add the dependency in your app's build.gradle file:
-
-```groovy
-dependencies {
-    implementation 'com.github.YourUsername:YourLibrary:Tag'
-}
-Replace `YourUsername` with your GitHub username and `YourLibrary` with the name of your library repository. Replace `Tag` with the desired version tag, e.g., `1.0`.
-
-## Usage
-
-### Initialization
-
-First, initialize the BioMetricAuth instance with the application context:
-
-```kotlin
-val bioMetricAuth = BioMetricAuth(context)
+### facing some issues with jitpack at thhe moment, will update and fix later.
+### there's only 2 classes that you can copy and paste to easily implement the code in your project
