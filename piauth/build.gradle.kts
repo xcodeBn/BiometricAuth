@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidLibrary)
@@ -29,6 +31,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility =JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -43,7 +50,7 @@ publishing {
         register<MavenPublication>("maven") {
             groupId = "com.pisces.piauth"
             artifactId = "piauth"
-            version = "3.0"
+            version = "1.0"
 
             afterEvaluate {
                 from(components["release"])
