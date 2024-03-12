@@ -12,5 +12,25 @@ BioMetricAuth is an Android library designed to simplify the implementation of b
 
 ## Installation
 
-### facing some issues with jitpack at thhe moment, will update and fix later.
-### there's only 2 classes that you can copy and paste to easily implement the code in your project
+#### Step 1. Add the JitPack repository to your build file
+```
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+#### Step 2. Add the dependency
+
+```
+	dependencies {
+	        implementation 'com.github.xcodeBn:BiometricAuth:1.0.2'
+	}
+```
+
+
+
+[![](https://jitpack.io/v/xcodeBn/BiometricAuth.svg)](https://jitpack.io/#xcodeBn/BiometricAuth)
+
