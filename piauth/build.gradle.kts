@@ -50,7 +50,7 @@ publishing {
         register<MavenPublication>("maven") {
             groupId = "com.pisces.piauth"
             artifactId = "piauth"
-            version = "1.0"
+            version = "2.0"
 
             afterEvaluate {
                 from(components["release"])

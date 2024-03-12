@@ -61,7 +61,7 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
     implementation(libs.androidx.fragment.ktx)
-    implementation(project(":piauth"))
+    //implementation("com.github.xcodeBn:BiometricAuth:1.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -71,6 +71,6 @@ dependencies {
     debugImplementation(libs.ui.test.manifest)
     implementation(libs.androidx.biometric)
     implementation(libs.androidx.biometric.v120alpha05)
-    implementation("com.github.xcodeBn:B_Auth2:piAuth")
+
 
 }
