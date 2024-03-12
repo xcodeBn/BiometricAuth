@@ -23,60 +23,61 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.FragmentActivity
 import com.pisces.b_auth2.ui.theme.B_Auth2Theme
-
+import com.pisces.piauth.BioMetricAuth
+import com.pisces.piauth.BioMetricAuthStatus
 
 
 class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        val biometricAuthenticator = BioMetricAuth(this)
+        val biometricAuthenticator = BioMetricAuth(this)
 
         setContent {
-//            B_Auth2Theme {
-//
-//                // A surface container using the 'background' color from the theme
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    Column(
-//                        Modifier.fillMaxSize(), Arrangement.Center, Alignment.CenterHorizontally
-//                    ) {
-//                        val activity = LocalContext.current as FragmentActivity
-//                        var message by remember {
-//                            mutableStateOf("")
-//                        }
-//
-//                       TextButton(onClick = { biometricAuthenticator.promptBiometricAuth(
-//                           title= "Login",
-//                           subtitle = "Use your finger print or faceid",
-//                           negativeButtonText = "Cancel",
-//                           fragmentActivity = activity,
-//                           onSuccess = {
-//                               message = "Success + ${it.authenticationType}"
-//                           },
-//                           onFailed = {
-//                               message = "Failed"
-//                           },
-//                           onError = {
-//                                   id,error ->
-//                               if(id== BioMetricAuthStatus.NOT_AVAILABLE.id){
-//
-//                               }
-//
-//                               message = "Error: + $error"
-//                           }
-//
-//                       ) }) {
-//                           Text(text = "Login with fingerprint or face id")
-//                       }
-//
-//                        Spacer(modifier = Modifier.height(10.dp))
-//                        Text(text = message)
-//
-//                    }
-//                }
-//            }
+            B_Auth2Theme {
+
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    Column(
+                        Modifier.fillMaxSize(), Arrangement.Center, Alignment.CenterHorizontally
+                    ) {
+                        val activity = LocalContext.current as FragmentActivity
+                        var message by remember {
+                            mutableStateOf("")
+                        }
+
+                       TextButton(onClick = { biometricAuthenticator.promptBiometricAuth(
+                           title= "Login",
+                           subtitle = "Use your finger print or faceid",
+                           negativeButtonText = "Cancel",
+                           fragmentActivity = activity,
+                           onSuccess = {
+                               message = "Success + ${it.authenticationType}"
+                           },
+                           onFailed = {
+                               message = "Failed"
+                           },
+                           onError = {
+                                   id,error ->
+                               if(id== BioMetricAuthStatus.NOT_AVAILABLE.id){
+
+                               }
+
+                               message = "Error: + $error"
+                           }
+
+                       ) }) {
+                           Text(text = "Login with fingerprint or face id")
+                       }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+                        Text(text = message)
+
+                    }
+                }
+            }
         }
     }
 }

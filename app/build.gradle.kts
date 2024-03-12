@@ -61,7 +61,7 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
     implementation(libs.androidx.fragment.ktx)
-    //implementation("com.github.xcodeBn:BiometricAuth:1.0.0")
+    implementation("com.github.xcodeBn:BiometricAuth:1.0.2")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
